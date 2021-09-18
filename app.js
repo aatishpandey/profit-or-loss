@@ -40,4 +40,4 @@ function showOutput(message){
     output.innerText = message;
 }
 
-checkBtn.addEventListener('click',clickHandler)
+checkBtn.addEventListener('click',clickHandler);
