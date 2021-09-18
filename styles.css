@@ -1,0 +1,23 @@
+.main-body{
+    margin: auto;
+    text-align: center;
+}
+
+#input-initial-price{
+    display: block;
+    margin: auto;
+}
+
+#input-stocks{
+    display: block;
+    margin: auto;
+}
+
+#input-current-price{
+    display: block;
+    margin: auto;
+}
+
+#btn-check{
+    margin: auto;
+}
