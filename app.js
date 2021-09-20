@@ -23,7 +23,7 @@ function calculateProfitLoss(initialP,currenP,quantity){
     }
     else{
         //equal
-        showOutput('lazy! Calculate Yourself');
+        showOutput('No gains No losses!!!');
     }
 
 }
@@ -32,7 +32,14 @@ function clickHandler(){
     var ip = Number(inputInitialPrice.value);
     var cp = Number(inputCurrentPrice.value);
     var qty = Number(inputStocks.value);
-    calculateProfitLoss(ip,cp,qty);
+
+    if(ip&&cp&&qty){
+        calculateProfitLoss(ip,cp,qty);
+    }else{
+        showOutput("Please enter all values");
+    }
+
+    
 
 }
 
