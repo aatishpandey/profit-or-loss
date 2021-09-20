@@ -11,16 +11,16 @@
 
 <body>
     <div class="main-body">
-        <h1 id="heading">Stonks:Profit or Loss?🚀</h1>
+        <h1 id="heading">Stocks:Profit or Loss?🚀</h1>
 
-        <label for="input-initial-price" class="input-label" </label>
-        <input type="number" min="0"  id="input-initial-price" oninput="validity.valid||(value='');"/>
+        <label for="input-initial-price" class="input-label">Initial Price</label>
+        <input type="number" min="1"  id="input-initial-price" oninput="validity.valid||(value='');"/>
 
         <label for="input-stocks" class="input-label">Quantity of Stocks</label>
-        <input type="number" min="0" id="input-stocks" oninput="validity.valid||(value='');" />
+        <input type="number" min="1" id="input-stocks" oninput="validity.valid||(value='');" />
 
         <label for="input-current-price" class="input-label">Current Price</label>
-        <input type="number" min="0" id="input-current-price" oninput="validity.valid||(value='');" />
+        <input type="number" min="1" id="input-current-price" oninput="validity.valid||(value='');" />
 
         <button id="btn-check">Check</button>
 
