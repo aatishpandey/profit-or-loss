@@ -12,14 +12,16 @@ function calculateProfitLoss(initialP,currenP,quantity){
         var loss = ((initialP-currenP)*quantity).toFixed(2);
         var lossPer = (((initialP-currenP)*100)/initialP).toFixed(2);
 
-        showOutput(`The loss is ${loss} and the percent of the loss is ${lossPer}%`);
+        showOutput(`Oh!!😔 Your loss 💰 is ${loss} and the percent of the loss is ${lossPer}%`);
+        output.style.color = '#EF4444';
     }
     else if(currenP>initialP){
         //profit
         var profit = ((currenP-initialP)*quantity).toFixed(2);
         var profitPer = (((currenP-initialP)*100)/initialP).toFixed(2);
 
-        showOutput(`The profit is ${profit} and the percent of the profit is ${profitPer}%`);
+        showOutput(`🤑 Yay!!Your profit 💰 is ${profit} and the percent of the profit is ${profitPer}% 🤑`);
+        output.style.color = '#A7F3D0';
     }
     else{
         //equal
@@ -38,8 +40,6 @@ function clickHandler(){
     }else{
         showOutput("Please enter all values");
     }
-
-    
 
 }
 
